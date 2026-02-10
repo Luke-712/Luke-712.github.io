@@ -52,7 +52,7 @@ function getColor(value) {
 }
 function style(feature){
     return {
-        fillColor: getColor(feature.properties.POP10),   // POP10 is the population field in your data
+        fillColor: getColor(feature.properties.POP10),
         weight: 2,
         opacity: 1,
         color: 'gray',
@@ -100,7 +100,7 @@ var legend = L.control({position: 'bottomright'});
 legend.onAdd = function (map) {
 
     var div = L.DomUtil.create('div', 'info legend'),
-        grades = [0, 5000000, 10000000, 25000000, 50000000]; // Matches your getColor function
+        grades = [0, 5000000, 10000000, 25000000, 50000000]; 
 
     div.innerHTML = '<b>Population 2010 <br><br></b>';
 
